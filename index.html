@@ -406,22 +406,60 @@ projects and monitoring infrastructure.
 
 <p>📞 +268 76888996</p>
 <p>📧 Sanele@tipsenergies.com</p>
-<p>📍 Eswatini</p>
+<p>📍 351 Green Field Manzini Eswatini</p>
 
 </div>
 
 </div>
 
 
-<form class="contact-form">
+<form 
+action="https://formspree.io/f/xwvrnzoy"
+method="POST"
+class="contact-form"
+>
 
-<input placeholder="Full Name">
-<input placeholder="Phone Number">
-<input placeholder="Email Address">
+<input 
+type="text"
+name="name"
+placeholder="Full Name"
+required
+>
 
-<textarea placeholder="Describe your project"></textarea>
+<input 
+type="tel"
+name="phone"
+placeholder="Phone Number"
+>
 
-<button class="btn-primary">Send Message</button>
+<input 
+type="email"
+name="email"
+placeholder="Email Address"
+required
+>
+
+<textarea 
+name="message"
+placeholder="Describe your project"
+required
+></textarea>
+
+<input 
+type="hidden" 
+name="_subject" 
+value="New Project Inquiry - Tips Energies"
+>
+
+<input 
+type="hidden" 
+name="_next" 
+value="thankyou.html"
+>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
 
 </form>
 
