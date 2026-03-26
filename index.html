@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -413,21 +414,64 @@ projects and monitoring infrastructure.
 </div>
 
 
-<form
-  action="https://formspree.io/f/xwvrnzoy"
-  method="POST"
+<form 
+action="https://formspree.io/f/xwvrnzoy"
+method="POST"
+class="contact-form"
 >
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+
+<input 
+type="text"
+name="name"
+placeholder="Full Name"
+required
+>
+
+<input 
+type="tel"
+name="phone"
+placeholder="Phone Number"
+>
+
+<input 
+type="email"
+name="email"
+placeholder="Email Address"
+required
+>
+
+<textarea 
+name="message"
+placeholder="Describe your project"
+required
+></textarea>
+
+<input 
+type="hidden" 
+name="_subject" 
+value="New Project Inquiry - Tips Energies"
+>
+
+<input 
+type="hidden" 
+name="_next" 
+value="thankyou.html"
+>
+
+<button type="submit" class="btn-primary">
+Send Message
+</button>
+
 </form>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
 <div class="container footer">
 
 <div>
