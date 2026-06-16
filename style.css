@@ -418,4 +418,48 @@ display:none;
 font-size:36px;
 }
 
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+color:#333;
+}
+
+/* IMPORTANT: anchor dropdown properly */
+.nav-inner{
+position:relative;
+}
+
+@media(max-width:900px){
+
+/* show hamburger */
+.menu-toggle{
+display:block;
+}
+
+/* hide nav by default */
+nav{
+display:none;
+flex-direction:column;
+position:absolute;
+top:60px;
+right:0;
+background:white;
+padding:15px;
+border:1px solid #eee;
+border-radius:10px;
+width:180px;
+z-index:2000;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* when JS toggles this class */
+nav.active{
+display:flex;
+}
+
+/* spacing for mobile links */
+nav a{
+margin:10px 0;
+}
 }
